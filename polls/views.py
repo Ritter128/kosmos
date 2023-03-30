@@ -28,7 +28,7 @@ def mission(request):
   return render(request, 'main/mission.htmx', {})
 
 def posts(request):
-  posts_data = Post.objects.all().values()
+  posts_data = Post.objects.all().values().order_by("-timestamp")
 
   template = loader.get_template('main/posts.htmx')
   context = {
