@@ -13,9 +13,9 @@ Posts
     <p>{{x.content}}</p>
     
     {% if x.likes > 200 %}
-        <h6>{{x.likes}} LIKES!!!</h6>
+        <h6>{{x.likes}} LIKES!!! | {{x.timestamp}}</h6>
     {% else %}
-        <h6>{{x.likes}} LIKES</h6>
+        <h6>{{x.likes}} LIKES | {{x.timestamp}}</h6>
     {% endif %}
 {% endfor %}
 
