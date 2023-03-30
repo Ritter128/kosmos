@@ -28,4 +28,10 @@ class Room(models.Model):
   content = models.TextField('blank')
   host = models.CharField(max_length=20, default="Anon")
 
+class Check(models.Model):
+  reciever = models.CharField(max_length=20, default="Anon")
+  sender = models.CharField(max_length=20, default="Anon")
+  amount = models.IntegerField(default=0)
+  
+
 
