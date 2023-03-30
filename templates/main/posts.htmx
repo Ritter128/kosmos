@@ -1,0 +1,24 @@
+{% extends 'main/base.htmx' %}
+
+{% block title %}
+Posts
+{% endblock %}
+
+{% block content %}
+<h3> Posts </h3>
+
+{% for x in posts %}
+    <h3>---------------</h3>
+    <h3>{{x.author}}</h3>
+    <p>{{x.content}}</p>
+    
+    {% if x.likes > 200 %}
+        <h6>{{x.likes}} LIKES!!!</h6>
+    {% else %}
+        <h6>{{x.likes}} LIKES</h6>
+    {% endif %}
+{% endfor %}
+
+<a href="/">RETURN</a>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'main/base.htmx' %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+    <h3>About</h3>
+    <p>This website is about me learning Django.</p>
+    <a href="/">RETURN</a>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'main/base.htmx' %}
+
+{% block title %}
+Our Mission
+{% endblock %}
+
+{% block content %}
+    <h3>Our Mission</h3>
+
+    <p>
+        We want to destroy the industrial technological system and 
+        return the human spirit to its natural state.
+    </p>
+
+    <a href="/">RETURN</a>
+{% endblock %}

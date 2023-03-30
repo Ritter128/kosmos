@@ -1,0 +1,16 @@
+{% extends 'main/base.htmx' %}
+
+{% block title %}
+Rooms
+{% endblock title %}
+
+{% block content %}
+<h3>Welcome to "{{name}}" hosted by {{host}}</h3>
+
+<legend>Description: {{desc}}</legend>
+
+<h3>Content</h3>
+<p>{{content}}</p>
+
+<a href="/">RETURN</a>
+{% endblock content %}
